@@ -1,0 +1,14 @@
+header {
+    display: grid;
+    grid-column: 10vh 1fr;
+    background-color: #FBEE97;
+    border: 2px crimson;
+    
+}
+header img {
+    grid-column-start: 1;
+    max-width: 10vh;
+}
+h1 {
+    grid-column-start: 2;
+}

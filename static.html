@@ -5,12 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>PokeDex</title>
-        <link rel='stylesheet' href='/src/main.css' type='text/css'>
+        <link rel='stylesheet' href='/main.css' type='text/css'>
+        <link rel='stylesheet' href='/src/components/header/header.css' type='text/css'>
+        <link rel='stylesheet' href='/src/components/header/header.css' type='text/css'>
+        <link rel='stylesheet' href='/src/components/header/header.css' type='text/css'>
     </head>
     <body>
         <header>
-
+            <img src="./assets/PokeballLogo.png">
+            <h1>The PokéDex</h1>
         </header>
+        <div class="filter-options">
+        <div class="search">
+            Search <select id="search-by"></select>
+        </div>
+        <div class="sort">
+                <input type="radio" name="sort-type" id="sort-by">sort-by</input>
+                <input type="radio" name="sort-type" id="sort-by">sort-by</input>
+                <input type="radio" name="sort-type" id="sort-by">sort-by</input>
+            </div>
+        </div>    
+            <section class="poke-box">
+                <div class="poke-card"></div>
+                <div class="poke-card"></div>
+                <div class="poke-card"></div>
+                <div class="poke-card"></div>
+
+            </section>
+
         <div id="root"></div>
 
         <script src="./src/index.js" type="module"></script>

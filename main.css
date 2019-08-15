@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 3em 1fr;
+    background-color: #FBF1C1;
+}
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+}
+.sort {
+    grid-row: 2;
+}
+.search {
+    grid-row: 2;
+}
+.poke-box {
+    grid-row: 3;
+    display: flex;
+    background-color: black;
+    
+}
+.poke-card {
+    height: 500px;
+    width: 300px;
+    padding: 1px;
+    background-color: red;
+    border: 2px aqua;
+}
