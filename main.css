@@ -8,6 +8,7 @@ body {
 .filter-options {
     display: inline;
     justify-content: space-between;
+    border: 2px solid red;
 }
 .sort {
     grid-row: 2;
@@ -21,6 +22,7 @@ body {
     flex-wrap:wrap;
     background-color: #0B3954;
     justify-content: space-around;
+   
     
 }
 .poke-card {

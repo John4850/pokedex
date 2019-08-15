@@ -2,7 +2,7 @@ header {
     display: grid;
     grid-column: 1;
     background-color: #FBEE97;
-    border: 2px crimson;
+    border: 2px solid crimson;
     height: 15vh
 }
 header img {
