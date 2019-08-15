@@ -3,10 +3,11 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 3em 1fr;
     background-color: #FBF1C1;
+    height: 100vh;
 }
 .filter-options {
-    display: flex;
-    justify-content: space-around;
+    display: inline;
+    justify-content: space-between;
 }
 .sort {
     grid-row: 2;
@@ -17,13 +18,20 @@ body {
 .poke-box {
     grid-row: 3;
     display: flex;
-    background-color: black;
+    flex-wrap:wrap;
+    background-color: #0B3954;
+    justify-content: space-around;
     
 }
 .poke-card {
-    height: 500px;
+    height: 400px;
     width: 300px;
     padding: 1px;
+    margin-top: 2px;
+    margin-left:1px;
+    margin-right:1px;
+    margin-bottom:2px;
     background-color: red;
     border: 2px aqua;
+
 }

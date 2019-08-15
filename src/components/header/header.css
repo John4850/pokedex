@@ -1,13 +1,13 @@
 header {
     display: grid;
-    grid-column: 10vh 1fr;
+    grid-column: 1;
     background-color: #FBEE97;
     border: 2px crimson;
-    
+    height: 15vh
 }
 header img {
     grid-column-start: 1;
-    max-width: 10vh;
+    max-width: 15vh;
 }
 h1 {
     grid-column-start: 2;
