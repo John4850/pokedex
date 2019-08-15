@@ -16,7 +16,6 @@ class App extends Component {
                     
                 </main>
 
-                <footer> <h3>&copy John</h3> </footer>
             </div> 
         `;
     }

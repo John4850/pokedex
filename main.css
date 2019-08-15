@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Tillana&display=swap');
+
+
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 3em 1fr;
+    grid-template-rows: 5em 3em 1fr;
     background-color: #FBF1C1;
     height: 100vh;
 }
@@ -22,6 +25,7 @@ body {
     flex-wrap:wrap;
     background-color: #0B3954;
     justify-content: space-around;
+    contain: content;
    
     
 }
@@ -35,5 +39,6 @@ body {
     margin-bottom:2px;
     background-color: red;
     border: 2px aqua;
+    contain: content;
 
 }
