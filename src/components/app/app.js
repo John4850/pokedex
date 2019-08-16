@@ -1,10 +1,13 @@
-import Component from '..Component.js';
-
+import Component from '../../components/Component.js';
+import Header from '../header/header.js';
 
 
 class App extends Component {
 
-    onRender() {
+    onRender(dom) {
+        const header = new Header();
+        const headerDOM = header.renderDOM();
+        dom.prepend(headerDOM);
     }
 
 
