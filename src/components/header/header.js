@@ -1,6 +1,6 @@
 import Component from '../Component.js';
 
-class NewComponent extends Component {
+class Header extends Component {
     onRender() {
     
     }
@@ -17,4 +17,4 @@ class NewComponent extends Component {
     }
 }
 
-export default NewComponent;
+export default Header;
