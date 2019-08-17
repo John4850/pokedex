@@ -2,7 +2,7 @@ import Component from '../../components/Component.js';
 import Header from '../header/header.js';
 import getPokemon from '../../services/services.js';
 import PokemonBox from '../poke-box/poke-box.js';
-import hashStorage from '../../services/hash-storage.js';
+// import hashStorage from '../../services/hash-storage.js';
 
 
 class App extends Component {
