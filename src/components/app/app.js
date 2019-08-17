@@ -1,5 +1,6 @@
 import Component from '../../components/Component.js';
 import Header from '../header/header.js';
+import getPokemon from '../../services/services.js';
 
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
+
     }
 
 
