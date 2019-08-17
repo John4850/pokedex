@@ -6,7 +6,7 @@ class PokemonBox extends Component {
 
     onRender(dom) {
         const pokemonList = this.props.pokemonList;
-
+        console.log(pokemonList);
         pokemonList.forEach(pokemon => {
             const props = { pokemon: pokemon };
             const pokemonCard = new Pokemon(props);
