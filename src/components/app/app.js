@@ -14,7 +14,6 @@ class App extends Component {
         dom.prepend(headerDOM);
 
         const searchSection = dom.querySelector('.search-section');
-        console.log(searchSection);
         const search = new Search();
         searchSection.appendChild(search.renderDOM());
 
