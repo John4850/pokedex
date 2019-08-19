@@ -4,7 +4,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5em 3em 1fr;
+    grid-template-rows: 10vh 3em 1fr;
     background-color: #FBF1C1;
     height: 100vh;
 }
@@ -31,6 +31,9 @@ body {
 }
 h2 {
     margin: 0;
+    font-family: 'Dokdo', cursive;
+    text-transform: capitalize;
+
 }
 .poke-card {
     display: flex;
@@ -40,11 +43,12 @@ h2 {
     padding: 1px;
     margin-top: 5px;
     background-color: red;
-    border: 2px aqua;
+    border: 5px gold;
     contain: content;
     text-align: center;
 }
 .poke-card img {
+    height: auto;
     width: 100%;
-    object-fit: contain;
+    object-fit: scale-down;
 }

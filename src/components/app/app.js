@@ -2,7 +2,7 @@ import Component from '../../components/Component.js';
 import Header from '../header/header.js';
 import getPokemon from '../../services/services.js';
 import PokemonBox from '../poke-box/poke-box.js';
-// import hashStorage from '../../services/hash-storage.js';
+import hashStorage from '../../services/hash-storage.js';
 
 
 class App extends Component {
@@ -17,8 +17,8 @@ class App extends Component {
         main.appendChild(pokemonBox.renderDOM());
 
         function loadPokemon() {
-            // const options = hashStorage.get();
-            getPokemon()
+            const options = hashStorage.get();
+            getPokemon(options)
                 .then(data => {
                     const pokemonList = data.results.results;
                     pokemonBox.update({ pokemonList: pokemonList });
