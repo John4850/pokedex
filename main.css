@@ -4,7 +4,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 3em 1fr;
+    grid-template-rows: 10vh 1fr 1fr;
     background-color: #FBF1C1;
     height: 100vh;
 }
@@ -13,10 +13,11 @@ body {
     justify-content: space-between;
     border: 2px solid red;
 }
-.sort {
+.paging-section {
     grid-row: 2;
+    flex-direction: row-reverse;
 }
-.search {
+.search-section {
     grid-row: 2;
 }
 .poke-box {
