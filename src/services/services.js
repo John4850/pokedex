@@ -1,7 +1,13 @@
 const URL = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
 
-export default function getPokemon() {
-    return fetch(URL)
+export default function getPokemon(options) {
+    const page = options.page || 1;
+    const search = options.search;
+    
+    const url = `${URL}?page=${page || 1}&pokemon=${search || ''}`;
+    
+    
+    return fetch(url)
         .then(response => response.json())
         .then(results => {
             return {
