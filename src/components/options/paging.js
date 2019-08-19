@@ -11,7 +11,6 @@ class Paging extends Component {
         }
         
         const currentPage = this.props.currentPage || 1;
-        console.log(currentPage);
         
         function updatePage(increment) {
             hashStorage.set({ page: currentPage + increment });
