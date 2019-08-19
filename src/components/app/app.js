@@ -3,6 +3,7 @@ import Header from '../header/header.js';
 import getPokemon from '../../services/services.js';
 import PokemonBox from '../poke-box/poke-box.js';
 import hashStorage from '../../services/hash-storage.js';
+import Search from '../options/search.js';
 
 
 class App extends Component {
@@ -11,6 +12,11 @@ class App extends Component {
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
+
+        const searchSection = dom.querySelector('.search-section');
+        console.log(searchSection);
+        const search = new Search();
+        searchSection.appendChild(search.renderDOM());
 
         const pokemonBox = new PokemonBox({ pokemonList: [] });
         const main = dom.querySelector('#main');
@@ -26,6 +32,9 @@ class App extends Component {
 
         }
         loadPokemon();
+        window.addEventListener('hashchange', () => {
+            loadPokemon();
+        });
     }
 
 
@@ -34,6 +43,7 @@ class App extends Component {
             <div>
                <!-- header goes here --> 
                 <main id="main">
+                <section class="search-section">
                     
                 </main>
 
